@@ -3,9 +3,9 @@ import requests
 import webbrowser
 from opencage.geocoder import OpenCageGeocode
 
-API_KEY = 'num_live_qr6f39KWNiNgxhUmes7tOJO9CZMu4Kig5k6VuHxz'
+API_KEY = 'Your_API_Key'
 NUMLOOKUP_URL = 'https://api.numlookupapi.com/v1/validate'
-OPENCAGE_API_KEY = '74e25940d3734ded8b1fb6ccad76ae35'
+OPENCAGE_API_KEY = 'Your_API_Key'
 
 
 def get_phone_info(phone_number):
