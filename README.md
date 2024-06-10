@@ -1,6 +1,6 @@
 ### Detailed Description
 
-This Python application is designed to track phone numbers and retrieve associated information such as location, carrier, and brand. It utilizes various APIs and libraries to provide users with comprehensive details about any given phone number.
+This Python application serves as a prototype for tracking phone numbers and retrieving associated information, including location, carrier, and brand. While functional, it is in a prototype stage, and there are known issues and areas for improvement.
 
 #### Features:
 
@@ -8,9 +8,9 @@ This Python application is designed to track phone numbers and retrieve associat
 
 2. **Numverify API Integration**: The application communicates with the Numverify API to validate phone numbers and retrieve details such as the country prefix, country code, and country name.
 
-3. **Location Retrieval**: Using the OpenCage Geocoder API, the application retrieves the geographic location (latitude and longitude) of the phone number based on the user's IP address.
+3. **Location Retrieval**: Utilizing the OpenCage Geocoder API, the application attempts to retrieve the geographic location (latitude and longitude) of the phone number based on the user's IP address.
 
-4. **Brand Identification**: The application identifies the brand of the phone number, if available, providing insights into the service provider or manufacturer.
+4. **Brand Identification**: The application attempts to identify the brand of the phone number, providing insights into the service provider or manufacturer.
 
 5. **Graphical User Interface (GUI)**: Built using the Tkinter library, the application offers a user-friendly interface for inputting phone numbers and viewing the retrieved information.
 
@@ -34,10 +34,16 @@ This Python application is designed to track phone numbers and retrieve associat
 
 4. **Run the Application**: Execute the Python script, and the graphical user interface will appear. Input the phone number you want to track and click the "Track" button to retrieve information.
 
+#### Known Issues:
+
+1. **Location Accuracy**: The application may not accurately determine the location of the phone number due to limitations in IP-based geolocation and reverse geocoding.
+
+2. **Brand Identification**: The brand identification feature may not always provide accurate results, as it relies on carrier information provided by the Numverify API.
+
+3. **Latitude and Longitude**: In some cases, the latitude and longitude coordinates retrieved may be incorrect or imprecise, affecting the accuracy of the location displayed.
+
 #### Note:
 
-- **Security**: Protect API keys and sensitive information by storing them securely. Avoid hardcoding API keys directly in the code, especially if sharing or publishing the code publicly.
+- **Prototype Status**: This application is still in the prototype stage and may contain bugs, errors, or inaccuracies. It is intended for demonstration purposes and may require further refinement before production use.
 
-- **Error Handling**: Enhance error handling mechanisms to gracefully handle network errors, API rate limits, and invalid input formats.
-
-- **Enhancements**: Consider adding additional features such as batch processing for multiple phone numbers, data caching for improved performance, and support for more API providers to expand data coverage.
+- **Feedback and Contributions**: Feedback on usability, performance, and feature suggestions are welcome. Contributors are encouraged to submit enhancements or bug fixes to improve the application's functionality and reliability.
