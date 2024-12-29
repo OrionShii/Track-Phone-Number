@@ -47,3 +47,5 @@ This Python application serves as a prototype for tracking phone numbers and ret
 - **Prototype Status**: This application is still in the prototype stage and may contain bugs, errors, or inaccuracies. It is intended for demonstration purposes and may require further refinement before production use.
 
 - **Feedback and Contributions**: Feedback on usability, performance, and feature suggestions are welcome. Contributors are encouraged to submit enhancements or bug fixes to improve the application's functionality and reliability.
+
+Note: `This feature is currently in beta and still under development.`
